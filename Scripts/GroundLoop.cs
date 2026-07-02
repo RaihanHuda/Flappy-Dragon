@@ -1,15 +1,9 @@
 using UnityEngine;
-
-/// <summary>
-/// (Opsional) Membuat tanah/latar bergerak ke kiri lalu meloncat balik
-/// ke kanan supaya terlihat berjalan tanpa henti (efek looping).
-/// Butuh 2 tile yang sama, berjejer. Pasang script ini di masing-masing tile.
-/// </summary>
 public class GroundLoop : MonoBehaviour
 {
-    public float speed = 3f;    // samakan dengan kecepatan pipa
-    public float tileWidth = 20f; // lebar 1 tile
-    public float leftLimit = -20f; // saat posisi X < ini, tile dipindah ke kanan
+    public float speed = 3f;  
+    public float tileWidth = 20f; 
+    public float leftLimit = -20f; 
 
     void Update()
     {
